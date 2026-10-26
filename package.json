@@ -1,0 +1,10 @@
+{
+  "name": "ashraful-resume-latex",
+  "private": true,
+  "scripts": {
+    "docx": "node scripts/build-docx.js Ashraful_Islam_Resume.docx && soffice --headless --convert-to pdf Ashraful_Islam_Resume.docx"
+  },
+  "dependencies": {
+    "docx": "9.5.1"
+  }
+}

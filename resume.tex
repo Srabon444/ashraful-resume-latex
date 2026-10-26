@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in LateX
+% Author : MD Ashraful Islam
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{charter}
+\input{glyphtounicode}
+
+% Accent color
+\definecolor{accent}{HTML}{1A56DB}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting with accent color
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{accent}
+}{}{0em}{}[\color{accent}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small\textit{#3} & \small\textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.ashraful.uk}{\Large\color{accent} MD Ashraful Islam}} &
+  \href{mailto:ashraful.codesmith@gmail.com}{ashraful.codesmith@gmail.com} \\
+  \href{https://github.com/Srabon444}{github.com/Srabon444} \textbf{·} \href{https://www.linkedin.com/in/ashraful-islam-rabby/}{linkedin.com/in/ashraful-islam-rabby} &
+  \href{https://www.ashraful.uk}{ashraful.uk} \textbf{·} \href{tel:+8801675996598}{+880-1675-996598} \\
+\end{tabular*}
+
+\vspace{2pt}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Techzu Ichicode Pte Ltd}{Singapore (Hybrid)}
+      {Software Engineer II}{Nov 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{ERP Platform (Team Lead)}
+          {Build \textbf{two SaaS ERP products} on SAP Business One workflows for BDO clients in Singapore and lead a team of \textbf{5 developers} on one of them; own task breakdown, technical decisions and code review for that project.}
+        \resumeItem{Client Management}
+          {Primary technical contact for \textbf{2 BDO clients}; run requirement meetings directly and turn procurement, accounting and service-contract processes into specs and delivery plans.}
+        \resumeItem{AI-Augmented Engineering}
+          {Built the team's AI-assisted workflow on Claude Code, with custom agents for implementation, PR review, regression checks and E2E smoke tests; now used across the team, it automated code review and cut review time by \textbf{70\%+}.}
+        \resumeItem{Standards \& Hiring}
+          {Authored the team's reusable-code plan, the ERP testing strategy and its E2E scope; evaluate technical assessments for engineering hires.}
+        \resumeItem{Performance Architecture}
+          {Replaced multi-table JOINs in the Item Master API with a two-phase paginated query and parallel sub-queries, cutting response time from \textbf{$\sim$8s to $\sim$225ms (97\%)}.}
+        \resumeItem{Purchasing \& Finance}
+          {Designed and delivered the Purchasing module across \textbf{6 document types}, with automated journal entries and GL determination feeding the financial statements.}
+        \resumeItem{Platform Engineering}
+          {Built shared pieces the team reuses: a config-driven reporting engine, a cron scheduler with cross-replica locking, and configurable rate limiting on public endpoints.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tech Analytica Limited}{Dhaka, Bangladesh}
+      {Full-Stack Software Engineer}{Aug 2024 -- Sep 2025}
+      \resumeItemListStart
+        \resumeItem{Ambufast (Project Lead)}
+          {Led end-to-end delivery of Bangladesh's largest ambulance booking platform, with Google Maps routing and the full booking $\rightarrow$ dispatch $\rightarrow$ billing $\rightarrow$ payment lifecycle.}
+        \resumeItem{Operations CMS}
+          {Built the admin and call-operator CMS for bookings, payments and billing, raising operational efficiency by \textbf{40\%}.}
+        \resumeItem{JS Green Media}
+          {Delivered a landscaping booking platform with a dynamic form builder and admin CMS, cutting missed client inquiries by \textbf{50\%}.}
+        \resumeItem{Performance \& SEO}
+          {Reduced API call overhead by \textbf{25\%} through caching and leaner data handling; page loads \textbf{35\%} faster.}
+        \resumeItem{Mentorship \& Delivery}
+          {Mentored a junior developer through task planning and code review; kept a \textbf{94\%} on-schedule delivery rate.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {RISIDIO}{London, UK (Remote, Contract)}
+      {Software Developer}{Jun 2024 -- Jul 2024}
+      \resumeItemListStart
+        \resumeItem{Codebase Overhaul}
+          {Improved performance and readability of a Next.js codebase for a UK blockchain and digital collectibles client; cut codebase size by \textbf{15\%} through Tailwind refactoring and component consolidation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GALAXY-NET BD}{Dhaka, Bangladesh}
+      {Jr. Full-Stack Developer}{Jan 2023 -- Mar 2024}
+      \resumeItemListStart
+        \resumeItem{Client Projects}
+          {Built React frontends and Node.js, Express, MongoDB and Firebase APIs across multiple client projects; introduced Agile sprints that cut development cycle time by \textbf{25\%}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://youtu.be/xep1fDpQrZE}{Porashona} (AI study companion, in development)}
+      {RAG tutor for Bangladeshi Class 11--12 students over NCTB curriculum documents (pgvector). Every answer cites its page, says ``not in the book'' when nothing matches, and calculations are checked automatically. Bring-your-own Anthropic, OpenAI or Gemini key, admin budget, usage and audit log, and a Remotion pipeline for narrated Bengali videos reviewed by a person before publishing.}
+    \resumeSubItem{\href{https://github.com/Srabon444/clickup-discord-notifier}{ClickUp $\rightarrow$ Discord Notifier} (self-hosted team automation)}
+      {Turns ClickUp activity into Discord notifications with real @mentions, a delivery-log dashboard and a webhook watchdog; a weekly coverage report flags anyone with no ticket for a day next week. Next.js, Supabase.}
+    \resumeSubItem{\href{https://github.com/Srabon444/team-timesheet}{Team Timesheet} (internal Techzu tool)}
+      {Used by \textbf{20+ users}: per-project timers that auto-fill the company's daily timesheet form, shipped as Chrome extension, desktop (Tauri) and Android apps synced through Google Drive, with an admin dashboard.}
+    \resumeSubItem{\href{https://github.com/Srabon444/meal-flow}{MealFlow} (internal Techzu tool)}
+      {Used by \textbf{20+ users}: office meal ordering, tally, dues and cancel-approval workflow; one SvelteKit + Supabase build ships to web, desktop (Tauri) and Android.}
+    \resumeSubItem{\href{https://github.com/Srabon444/htms-pro}{HRMS Pro} (internal HR system)}
+      {Staff directory, attendance, recruitment (ATS) and KPI reporting, replacing a manual weekly KPI report. SvelteKit, Supabase, Chart.js.}
+    \resumeSubItem{\href{https://marketplace.visualstudio.com/items?itemName=ashraful.claude-auto-resume}{Claude Auto-Resume} (VS Code Marketplace)}
+      {Published extension that resumes Claude Code chats after a usage limit resets: per-chat timers, and key sending across Windows, macOS, X11 and Wayland.}
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+\vspace{4pt}
+\begin{tabular*}{\textwidth}{@{}l@{\hskip 0.3in}l@{}}
+  \textbf{Frontend}     & React, Next.js, TypeScript, Ant Design, Tailwind CSS, TanStack Query, Zustand, Svelte \\[3pt]
+  \textbf{Backend}      & Node.js, Express, NestJS, FastAPI, REST APIs, Sequelize, Prisma \\[3pt]
+  \textbf{Data}         & PostgreSQL, pgvector, MongoDB, Redis, Supabase, Firebase \\[3pt]
+  \textbf{AI / Agents}  & Claude Code, Codex, Cursor, MCP, RAG, Anthropic / OpenAI / Gemini APIs \\[3pt]
+  \textbf{ERP Domain}   & SAP Business One workflows, Procurement, Journal Entries \& GL Determination \\[3pt]
+  \textbf{DevOps}       & Docker, Git, Vercel, Digital Ocean, Coolify, PM2 \\
+\end{tabular*}
+\vspace{4pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {United International University (UIU)}{Dhaka, Bangladesh}
+      {B.Sc. in Computer Science \& Engineering}{Mar 2016 -- Aug 2021}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
