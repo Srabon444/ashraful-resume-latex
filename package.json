@@ -2,7 +2,8 @@
   "name": "ashraful-resume-latex",
   "private": true,
   "scripts": {
-    "docx": "node scripts/build-docx.js Ashraful_Islam_Resume.docx && soffice --headless --convert-to pdf Ashraful_Islam_Resume.docx"
+    "latex": "docker run --rm -v \"$PWD\":/data latex pdflatex -jobname=Ashraful_Islam_Resume resume.tex",
+    "docx": "node scripts/build-docx.js word/Ashraful_Islam_Resume.docx && soffice --headless --convert-to pdf --outdir word word/Ashraful_Islam_Resume.docx"
   },
   "dependencies": {
     "docx": "9.5.1"

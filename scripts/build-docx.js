@@ -131,4 +131,5 @@ const doc = new Document({
   sections: [{ properties: { page: { size: { width: 11906, height: 16838 },
     margin: { top: 720, bottom: 720, left: 1000, right: 1000 } } }, children }],
 });
+fs.mkdirSync(require("path").dirname(out), { recursive: true });
 Packer.toBuffer(doc).then((b) => fs.writeFileSync(out, b));
