@@ -54,6 +54,9 @@ const children = [
   new Paragraph({ alignment: AlignmentType.CENTER, children: [
     new TextRun({ text: "MD Ashraful ", size: 56, font: HEAD }),
     new TextRun({ text: "Islam", bold: true, size: 56, font: HEAD })] }),
+  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: [
+    new TextRun({ text: "Full-Stack Software Engineer · Team Lead", bold: true, size: 24, font: HEAD }),
+    new TextRun({ text: "  |  Dhaka, Bangladesh · Open to remote", size: 22, font: HEAD })] }),
   new Paragraph({ alignment: AlignmentType.CENTER, children: [
     new TextRun({ text: "(+880) 1675996598 | ", size: SZ, font: BODY }),
     link("ashraful.codesmith@gmail.com", "mailto:ashraful.codesmith@gmail.com")] }),
