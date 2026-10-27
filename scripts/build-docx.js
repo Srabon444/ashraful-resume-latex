@@ -93,17 +93,17 @@ const children = [
     "Automatic calculation checks, bring-your-own Anthropic/OpenAI/Gemini key, admin budget, usage and audit log, and a Remotion pipeline for narrated Bengali videos reviewed before publishing.",
   ], "FastAPI, PostgreSQL, pgvector, Next.js, Remotion"),
   ...project("ClickUp → Discord Notifier", "https://github.com/Srabon444/clickup-discord-notifier", "Self-hosted team automation", [
-    "Turns ClickUp activity into Discord notifications with real @mentions, status-coloured messages, a delivery-log dashboard and a watchdog that alerts when the webhook goes unhealthy.",
-    "A weekly coverage report flags anyone with no ticket for a day next week; a private /tickets-list slash command shows active tickets on demand.",
+    "Turns ClickUp activity into Discord notifications with real @mentions and a weekly ticket-coverage report, saving developers **nearly 6 hours a week**.",
+    "A log dashboard records every event with its delivery status and raw payload for incident review; a watchdog alerts when the webhook goes unhealthy.",
   ], "Next.js, Supabase, Discord API, ClickUp API"),
   ...project("Team Timesheet", "https://github.com/Srabon444/team-timesheet", "Internal Techzu tool", [
-    "Used by **20+ users**: per-project timers that auto-fill the company's daily timesheet form, shipped as Chrome extension, desktop (Tauri) and Android apps synced through Google Drive, with an admin dashboard.",
+    "Used by **20+ users** and saves developers **140+ hours a month**: per-project timers that auto-fill the company's daily timesheet form, across Chrome extension, desktop (Tauri) and Android apps synced through Google Drive.",
   ], "Svelte, Tauri, Chrome Extension API, Google Drive API"),
   ...project("MealFlow", "https://github.com/Srabon444/meal-flow", "Internal Techzu tool", [
     "Used by **20+ users**: office meal ordering, tally, dues and cancel-approval workflow with admin and user dashboards; one build ships to web, desktop (Tauri) and Android.",
   ], "SvelteKit, Supabase, Tauri"),
   ...project("HRMS Pro", "https://github.com/Srabon444/htms-pro", "Internal HR system", [
-    "Staff directory, attendance, recruitment (ATS) and KPI reporting, replacing a manual weekly KPI report; the weekly report exports to PDF, image or clipboard.",
+    "Automates HR work and cuts the time it takes by **35%**: staff directory, attendance, recruitment (ATS) and KPI reporting that replaced a manual weekly report.",
   ], "SvelteKit, Supabase, Chart.js"),
   ...project("Claude Auto-Resume", "https://marketplace.visualstudio.com/items?itemName=ashraful.claude-auto-resume", "VS Code Marketplace", [
     "Published extension that resumes Claude Code chats after a usage limit resets: per-chat timers, key sending across Windows, macOS, X11 and Wayland.",
