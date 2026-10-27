@@ -4,19 +4,21 @@ My resume in two formats, both built from source in this repo.
 
 | Format | Source | Output |
 |---|---|---|
-| LaTeX (one column, two pages) | `resume.tex` | `resume.pdf` |
-| Word | `scripts/build-docx.js` | `Ashraful_Islam_Resume.docx` and `.pdf` |
+| LaTeX (one column, two pages) | `resume.tex` | `Ashraful_Islam_Resume.pdf` |
+| Word | `scripts/build-docx.js` | `word/Ashraful_Islam_Resume.docx` and `word/Ashraful_Islam_Resume.pdf` |
 
 The PDFs and the `.docx` are build outputs and are not committed.
 
 ## Build the LaTeX version
 
-No local TeX install needed; it compiles in Docker:
+No local TeX install needed; it compiles in Docker. Build the image once, then compile:
 
 ```sh
 docker build -t latex .
-docker run --rm -v "$PWD":/data latex pdflatex resume.tex
+npm run latex
 ```
+
+This writes `Ashraful_Islam_Resume.pdf` in the repo root.
 
 ## Build the Word version
 
@@ -26,3 +28,5 @@ Needs Node.js and LibreOffice. The body font is Carlito (`sudo apt install fonts
 npm install
 npm run docx
 ```
+
+This writes `Ashraful_Islam_Resume.docx` and its PDF into `word/`.
