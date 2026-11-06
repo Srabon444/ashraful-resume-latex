@@ -13,6 +13,7 @@
 \usepackage{xcolor}
 \usepackage{verbatim}
 \usepackage{enumitem}
+\usepackage{needspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
@@ -65,7 +66,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \Needspace{4\baselineskip}\vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \small #2 \\
       \small\textit{#3} & \small\textit{#4} \\
@@ -99,9 +100,9 @@
   \href{mailto:ashraful.codesmith@gmail.com}{ashraful.codesmith@gmail.com} \\
   \textbf{Full-Stack Software Engineer} &
   \href{https://www.ashraful.uk}{ashraful.uk} \textbf{·} \href{tel:+8801675996598}{+880-1675-996598} \\
-\end{tabular*}
   \href{https://github.com/Srabon444}{github.com/Srabon444} \textbf{·} \href{https://www.linkedin.com/in/ashraful-islam-rabby/}{linkedin.com/in/ashraful-islam-rabby} &
   Dhaka, Bangladesh \\
+\end{tabular*}
 
 \vspace{2pt}
 
@@ -117,8 +118,8 @@
           {Build \textbf{two SaaS ERP products} on SAP Business One workflows for BDO clients in Singapore and lead a team of \textbf{5 developers} on one of them; own task breakdown, technical decisions and code review for that project.}
         \resumeItem{Client Management}
           {Primary technical contact for \textbf{2 BDO clients}; run requirement meetings directly and turn procurement, accounting and service-contract processes into specs and delivery plans.}
-        \resumeItem{AI-Augmented Engineering}
-          {Built the team's AI-assisted workflow on Claude Code, with custom agents for implementation, PR review, regression checks and E2E smoke tests; now used across the team, it automated code review and cut review time by \textbf{70\%+}.}
+        \resumeItem{Agentic AI Development}
+          {Deliver features through an agentic workflow across Claude Code, Codex and Cursor: agents handle scaffolding, tests and first-pass code while I own design, review and quality. Built the team's Claude Code setup with custom agents for implementation, PR review, regression checks and E2E smoke tests; now used team-wide, it cut review time by \textbf{70\%+}.}
         \resumeItem{Standards \& Hiring}
           {Authored the team's reusable-code plan, the ERP testing strategy and its E2E scope; evaluate technical assessments for engineering hires.}
         \resumeItem{Performance Architecture}
@@ -136,11 +137,11 @@
         \resumeItem{Ambufast (Project Lead)}
           {Led end-to-end delivery of Bangladesh's largest ambulance booking platform, with Google Maps routing and the full booking $\rightarrow$ dispatch $\rightarrow$ billing $\rightarrow$ payment lifecycle.}
         \resumeItem{Operations CMS}
-          {Built the admin and call-operator CMS for bookings, payments and billing, raising operational efficiency by \textbf{40\%}.}
+          {Built the admin and call-operator CMS for bookings, payments and billing, raising operational efficiency by \textbf{40\%}; added KPI dashboards and automated invoice generation.}
         \resumeItem{JS Green Media}
-          {Delivered a landscaping booking platform with a dynamic form builder and admin CMS, cutting missed client inquiries by \textbf{50\%}.}
+          {Delivered an SEO-optimized landscaping booking platform with a dynamic form builder and admin CMS, cutting missed client inquiries by \textbf{50\%}.}
         \resumeItem{Performance \& SEO}
-          {Reduced API call overhead by \textbf{25\%} through caching and leaner data handling; page loads \textbf{35\%} faster.}
+          {Reduced API call overhead by \textbf{25\%} through caching and leaner data handling; page loads \textbf{35\%} faster for \textbf{1,000+} monthly users.}
         \resumeItem{Mentorship \& Delivery}
           {Mentored a junior developer through task planning and code review; kept a \textbf{94\%} on-schedule delivery rate.}
       \resumeItemListEnd
@@ -151,6 +152,10 @@
       \resumeItemListStart
         \resumeItem{Codebase Overhaul}
           {Improved performance and readability of a Next.js codebase for a UK blockchain and digital collectibles client; cut codebase size by \textbf{15\%} through Tailwind refactoring and component consolidation.}
+        \resumeItem{Content Operations}
+          {Streamlined content updates in Prismic CMS for faster, more accurate publishing.}
+        \resumeItem{Stability}
+          {Debugged and resolved key production issues for a stable, user-friendly site.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -158,7 +163,11 @@
       {Jr. Full-Stack Developer}{Jan 2023 -- Mar 2024}
       \resumeItemListStart
         \resumeItem{Client Projects}
-          {Built React frontends and Node.js, Express, MongoDB and Firebase APIs across multiple client projects; introduced Agile sprints that cut development cycle time by \textbf{25\%}.}
+          {Built responsive React and Tailwind CSS frontends from finalized client designs, and Node.js/Express APIs on MongoDB and Firebase, across multiple client projects.}
+        \resumeItem{Process Improvement}
+          {Introduced Agile sprints to the team, cutting development cycle time by \textbf{25\%}.}
+        \resumeItem{Quality \& Collaboration}
+          {Ran manual QA before releases and worked closely with UX and development teams to keep builds aligned with design.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
